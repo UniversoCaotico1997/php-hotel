@@ -42,7 +42,14 @@ $hotels = [
 
 // cicliamo all'interno del nostro array attraverso il foreach 
 foreach ($hotels as $hotel) {
-    echo $hotel;
+    echo $hotel['name'];
+    echo '<br>';
+    echo $hotel['description'];
+    echo '<br>';
+    echo $hotel['vote'];
+    echo '<br>';
+    echo $hotel['distance_to_center'];
+    echo '<br>';
 }
 
 ?>
