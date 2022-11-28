@@ -79,22 +79,26 @@ foreach ($hotels as $hotel) {
             </thead>
             <tbody>
                 <tr>
-                    <th><?php echo $hotel['name'] ?></th>
-                    <td><?php echo $hotel['description'] ?></td>
-                    <td><?php echo $hotel['parking'] ?></td>
-                    <td><?php echo $hotel['vote'] ?></td>
-                    <td><?php echo $hotel['distance_to_center'] ?></td>
-                </tr>
-                <tr>
-                    <th><?php echo $hotel['name'] ?></th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
+                    <th><?php foreach ($hotels as $hotel) {
+                            echo $hotel['name'];
+                            echo '<br>';
+                        } ?></th>
+                    <td><?php foreach ($hotels as $hotel) {
+                            echo $hotel['description'];
+                            echo '<br>';
+                        } ?></td>
+                    <td><?php foreach ($hotels as $hotel) {
+                            echo $hotel['parking'];
+                            echo '<br>';
+                        } ?></td>
+                    <td><?php foreach ($hotels as $hotel) {
+                            echo $hotel['vote'];
+                            echo '<br>';
+                        } ?></td>
+                    <td><?php foreach ($hotels as $hotel) {
+                            echo $hotel['distance_to_center'];
+                            echo '<br>';
+                        } ?></td>
                 </tr>
             </tbody>
         </table>
