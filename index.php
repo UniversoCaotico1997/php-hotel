@@ -41,16 +41,16 @@ $hotels = [
 ];
 
 // cicliamo all'interno del nostro array attraverso il foreach 
-foreach ($hotels as $hotel) {
-    echo $hotel['name'];
-    echo '<br>';
-    echo $hotel['description'];
-    echo '<br>';
-    echo $hotel['vote'];
-    echo '<br>';
-    echo $hotel['distance_to_center'];
-    echo '<br>';
-}
+// foreach ($hotels as $hotel) {
+//     echo $hotel['name'];
+//     echo '<br>';
+//     echo $hotel['description'];
+//     echo '<br>';
+//     echo $hotel['vote'];
+//     echo '<br>';
+//     echo $hotel['distance_to_center'];
+//     echo '<br>';
+// }
 
 ?>
 
@@ -66,8 +66,24 @@ foreach ($hotels as $hotel) {
 </head>
 
 <body>
-    <div class="container">
-        <table class="table">
+    <div class="container mt-5">
+        <!-- form -->
+        <form action="index.php" method="get">
+            <div class="mb-3">
+                <label for="parking">Search Parking</label>
+                <input name="parking" id="parking" type="text">
+            </div>
+            <div class="mb-3">
+                <label for="parking">Search Vote</label>
+                <input name="vote" id="vote" type="text">
+            </div>
+            <button type="">Submit</button>
+        </form>
+        <!-- /.form -->
+
+
+        <!-- Table -->
+        <table class="table mt-4">
             <thead class="bg-info">
                 <tr>
                     <th scope="col">Name</th>
@@ -102,6 +118,7 @@ foreach ($hotels as $hotel) {
                 </tr>
             </tbody>
         </table>
+        <!-- /.Table -->
     </div>
 </body>
 
