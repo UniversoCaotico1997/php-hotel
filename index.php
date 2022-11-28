@@ -39,6 +39,12 @@ $hotels = [
     ],
 
 ];
+
+// cicliamo all'interno del nostro array attraverso il foreach 
+foreach ($hotels as $hotel) {
+    echo $hotel;
+}
+
 ?>
 
 <!DOCTYPE html>
